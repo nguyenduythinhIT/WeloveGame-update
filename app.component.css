@@ -1,0 +1,14 @@
+app-navi-bar{
+    position: fixed;
+    width:100%
+}
+app-search-bar{
+    clear: both;
+    margin: 20px 15% 0;
+}
+
+@media screen and (max-width:750px){
+    app-search-bar{
+        margin: 20px 0 0;
+    }   
+}

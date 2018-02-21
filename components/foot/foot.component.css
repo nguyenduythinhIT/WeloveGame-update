@@ -1,0 +1,67 @@
+.foot{
+    width:100%;
+    min-height:100px;
+    background:#1e1e1e;
+    color:grey;
+    clear: both;overflow: hidden;
+}
+.foot > div{
+    float:left;
+}
+.foot > .top{
+    width:100%;
+    min-height:50px;
+    color:#ccc;
+    background:#2e2e2e;
+}
+.foot > .top .join-facebook{
+    margin-left:5%;
+    float:left;
+}
+.join-facebook{
+    overflow:auto;
+    max-width:95%;
+}
+.detail-website{
+    float:left;
+    margin-left:5%;
+    width:300px;    
+}
+.detail-website p {
+    font-size:40px;
+}
+.foot > .left{
+    width:45%;
+    margin-left:5%;
+    min-height:50px;
+    text-align: left;
+}
+.foot > .right{
+    width:45%;
+    margin-right:5%;
+    min-height:50px;
+    text-align: right;
+}
+.foot > .right > a{
+    text-decoration: none;
+    padding:5px 10px;
+    border-radius: 3px;
+    font-size:15px;
+    font-weight: bold;
+}
+.foot > .right > .facebook{
+    background:#fff;
+    color:#4267B2;
+}
+.foot > .right > .facebook:hover{
+    background:#4267B2;
+    color:white;
+}
+.foot > .right > .google{
+    background:#fff;
+    color:#900;
+}
+.foot > .right > .google:hover{
+    background:#900;
+    color:#fff;
+}

@@ -1,0 +1,28 @@
+.search-bar,input [type=search]{
+    width:calc(70% - 100px);
+    height:40px;
+    border:2px solid #4e5e6e;
+    border-radius:15px 0 0 15px;
+    padding-left:20px;
+    color:#4e5e6e;
+    font-size:18px;
+}
+.searchbtn{
+    width:100px;
+    height:40px;
+    margin-left:-10px;
+    border:2px solid #4e5e6e;
+    background:#4e5e6e;
+    border-radius:0 15px 15px 0;
+    font-size:18px;
+    color:#fff;
+}
+.searchbtn:active{
+    background:#ccc;
+}
+
+@media screen and (max-width:750px){
+    .search-bar,input [type=search]{
+        width:calc(100% - 100px);
+    }
+}
