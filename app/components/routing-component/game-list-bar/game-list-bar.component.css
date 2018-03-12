@@ -1,0 +1,17 @@
+.game-list-bar  ul{
+    width:95%;
+    margin:10px auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom:1px solid black;
+}
+.game-list-bar ul li{
+    margin: 0 3px;
+    border:1px solid black;
+    border-radius: 5px 5px 0 0;
+    padding:5px 10px;
+    background:#1e1e1e;
+    color:white;
+    cursor: pointer;
+}
