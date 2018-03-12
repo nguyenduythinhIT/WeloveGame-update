@@ -1,4 +1,23 @@
-<form action='http://localhost:3000/signup' method='get'>
-<input type='text' name='name' >
-<input type='submit'>
-</form>
+<div id="form-signup">
+    <form action="/signup" method="get">
+      <div id="id">
+        <input type="text" name="id" placeholder="Login Name" required>
+      </div>
+      <div id="password">
+        <input type="password" name="pass" placeholder="Password" required>
+      </div>
+      <div id="name">
+        <input type="text" name="name" placeholder="Name">
+      </div>
+      <div id="mail">
+          <input type="text" name="mail" placeholder="Mail">
+      </div>
+      <div id="phone">
+          <input type="text" name="phone" placeholder="Phone">
+        </div>
+      <div id="signup-reset-button">
+          <button type="submit" value="SignUp" name="signup">SignUp</button>
+          <button type="reset">Reset</button>
+      </div>
+  </form>
+</div>
