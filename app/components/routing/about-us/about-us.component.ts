@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent implements OnInit {
-
+  thinh:string = "./assets/thinh.jpg";
+  quy:string = "./assets/quy.jpg";
   constructor() { }
 
   ngOnInit() {
+      
   }
 
 }

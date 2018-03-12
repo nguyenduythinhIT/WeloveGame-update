@@ -1,0 +1,38 @@
+#information-box
+{
+    background:whitesmoke;
+    margin: 10px 10px;
+}
+
+#information-box .thinh
+{
+    height: 500px;
+    margin: 0 0 0 30%;
+}
+#information-box .quy
+{
+    height: 500px;
+    width: 400px;
+}
+@media screen and (max-width: 1200px)
+{
+    #information-box .quy
+    {
+        height: 500px;
+        width: 400px;
+        margin: 0 0 0 30%
+    }
+}
+@media screen and (max-width: 600px)
+{
+        #information-box .thinh
+    {
+        height: 250px;
+    }
+    #information-box .quy
+    {
+        height: 250px;
+        width: 200px;
+        margin: 0 0 0 30%
+    }
+}
