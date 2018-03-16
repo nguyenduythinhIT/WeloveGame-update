@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../../../config/config.service';
 
 @Component({
   selector: 'app-game-list',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private configservice:ConfigService) {
+    this.test();
+  }
 
   ngOnInit() {
   }
-
+  test(){
+    this.configservice.getConfig()
+		.subscribe(data =>     
+		console.log(data));
+  }
 }
