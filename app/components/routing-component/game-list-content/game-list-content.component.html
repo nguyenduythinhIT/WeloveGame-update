@@ -1,0 +1,20 @@
+<div id="item-column"  *ngFor="let game of gamelist" >
+  <div class="item-row">
+    <div class="item-span">
+      <div class="item-span-thumb">
+          <img class="item-span-infor-img" src="{{imgsrc}}"  height="250" width="350"> asdfasdf:
+      </div>
+      <div class="item-span-infor">
+        <div class="item-span-infor-title">
+            <h3 class="item-span-infor-title-h3">{{game.name}}</h3>
+        </div>
+        <div class="item-span-infor-date">
+          <h4 class="item-span-infor-cata">{{game.free}}</h4>
+          <span class="item-span-infor-date-release">{{game.release_date}}</span>
+        </div>
+         
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+ 
 
-  ngOnInit() {
   }
+
+  ngOnInit() { }
+
+
+ 
 
 }

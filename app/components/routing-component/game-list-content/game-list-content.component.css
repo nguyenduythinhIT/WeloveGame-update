@@ -1,0 +1,39 @@
+#item-column
+{
+    width: 50%;
+    height: 250px;
+}
+
+.item-row img
+{
+    position: absolute;
+}
+
+.item-span-infor
+{
+    position: relative;
+    z-index: 1;
+    top:180px;
+}
+.item-span-infor-title
+{
+    position: relative;
+    background: rgba(247,241,241,0.4);
+    width: 300px;
+}
+.item-span-infor h3
+{   
+    color: black;
+    margin:0 20px;
+}
+
+.item-span-infor-cata
+{
+    color: white;
+}
+
+.item-span-infor-date-release
+{
+    color:yellow;
+}
+
