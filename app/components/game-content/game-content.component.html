@@ -1,3 +1,11 @@
-<p>
-  game-content works!
-</p>
+<div class="game-content-box">
+  <div class="game-content-box-thumb">
+      <img  src="../../../assets/{{game.id}}.jpg">
+    </div>
+    <div class="game-content-box-infor">
+   <h3 class="game-content-box-infor-name">{{game.name}}</h3> 
+   <div class="game-content-box-infor-content">  {{game.content}} </div>
+  <span class="game-content-box-infor-author">Người đăng : {{game.user}}</span>
+   <p class="game-content-box-infor-date">Ngày ra mắt: {{game.release_date}}</p>
+  </div>
+</div>

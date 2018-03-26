@@ -1,0 +1,11 @@
+.game-content-box
+{
+    width: 100%;
+    height: 100%;
+}
+
+.game-content-box-thumb img
+{
+    width: 50%;
+    margin-left: 25%;
+}

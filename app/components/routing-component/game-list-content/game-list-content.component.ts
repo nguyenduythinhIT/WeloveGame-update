@@ -16,12 +16,14 @@ constructor(public gamelistservice:GameListContentService) {
   ngOnInit() {
   }
  gamelist:any[];
+  gernelist:any[];
   showConfig() {
     this.gamelistservice.getConfig()
      .subscribe((data: any[]) => {
           this.gamelist = data;
           console.log(this.gamelist);
       }
-    ); 
+    );
   }
+
 }

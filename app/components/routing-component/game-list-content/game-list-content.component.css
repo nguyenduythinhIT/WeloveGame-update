@@ -29,16 +29,27 @@
     z-index: 1;
     top:180px;
 }
+
 .item-span-infor-title
 {
     position: relative;
     background: rgba(247,241,241,0.4);
     width: 300px;
 }
+
 .item-span-infor h3
 {   
     color: black;
     margin:0 20px;
+}
+.item-span-infor h3:hover
+{   
+    color:bisque;
+    margin:0 20px;
+}
+.item-span-infor a
+{
+    text-decoration: none;
 }
 
 .item-span-infor-cata

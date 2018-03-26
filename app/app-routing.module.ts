@@ -24,7 +24,7 @@ const routes: Routes = [
     component:ContactComponent
   },
   {
-    path:'game-content',
+    path:'game-content/:name/:id',
     component:GameContentComponent
   }
 ];
