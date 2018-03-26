@@ -13,6 +13,7 @@ import { HomeSlideComponent } from './components/routing-component/home-slide/ho
 import { GameListContentComponent } from './components/routing-component/game-list-content/game-list-content.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GameListContentService } from './components/routing-component/game-list-content/game-list-content.service';
+import { GameContentComponent } from './components/game-content/game-content.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { GameListContentService } from './components/routing-component/game-list
     ContactComponent,
     SearchBarComponent,
     HomeSlideComponent,
-    GameListContentComponent
+    GameListContentComponent,
+    GameContentComponent
   ],
   imports: [
     BrowserModule,

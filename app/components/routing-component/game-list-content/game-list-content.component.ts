@@ -16,23 +16,12 @@ constructor(public gamelistservice:GameListContentService) {
   ngOnInit() {
   }
  gamelist:any[];
- imglist:any[];
-  imgsrc = "../../../../assets/";
   showConfig() {
     this.gamelistservice.getConfig()
      .subscribe((data: any[]) => {
-        for(var i=0 ; i<data.length ;i++)
-        {
           this.gamelist = data;
-          this.imglist = this.gamelist[i].id;
-          console.log(this.gamelist[i]);
-          this.imgsrc = "../../../../assets/";
-          this.imgsrc += this.imglist +".jpg";
-          alert(this.imgsrc);
-        }
+          console.log(this.gamelist);
       }
-    );
+    ); 
   }
-
-
 }

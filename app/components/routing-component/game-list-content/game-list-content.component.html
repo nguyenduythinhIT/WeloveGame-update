@@ -1,16 +1,17 @@
-<div id="item-column"  *ngFor="let game of gamelist" >
-  <div class="item-row">
-    <div class="item-span">
-      <div class="item-span-thumb">
-          <img class="item-span-infor-img" src="{{imgsrc}}"  height="250" width="350"> asdfasdf:
+
+<div id="item-column"  >
+  <div class="item-row"  >
+    <div class="item-span" *ngFor="let game of gamelist">
+      <div class="item-span-thumb" >
+          <img class="item-span-infor-img" src="../../../../assets/{{game.id}}.jpg"  height="250" width="350">
       </div>
       <div class="item-span-infor">
         <div class="item-span-infor-title">
-            <h3 class="item-span-infor-title-h3">{{game.name}}</h3>
+          <a routerLink='game-content/{{game.id}}'><h3 class="item-span-infor-title-h3">{{game.name}}</h3></a>
         </div>
         <div class="item-span-infor-date">
           <h4 class="item-span-infor-cata">{{game.free}}</h4>
-          <span class="item-span-infor-date-release">{{game.release_date}}</span>
+          <span class="item-span-infor-date-release">{{game.release_date}} + {{game.user}} </span>
         </div>
          
       </div>
