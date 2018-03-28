@@ -16,7 +16,8 @@ constructor(public gamelistservice:GameListContentService) {
   ngOnInit() {
   }
  gamelist:any[];
-  gernelist:any[];
+ notpaid = "Free";
+ paid = "Paid";
   showConfig() {
     this.gamelistservice.getConfig()
      .subscribe((data: any[]) => {
@@ -25,5 +26,6 @@ constructor(public gamelistservice:GameListContentService) {
       }
     );
   }
+
 
 }

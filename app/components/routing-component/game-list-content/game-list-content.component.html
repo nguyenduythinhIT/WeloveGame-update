@@ -9,8 +9,9 @@
         <div class="item-span-infor-title">
           <a routerLink='/game-content/{{game.name}}/{{game.id}}'><h3 class="item-span-infor-title-h3">{{game.name}}</h3></a>
         </div>
-        <div class="item-span-infor-date">
-          <h4 class="item-span-infor-cata">{{game.free}}</h4>
+        <div class="item-span-infor-date" >
+          <h4 class="item-span-infor-cata" *ngIf="game.free==0;else paidver">{{notpaid}}</h4>
+          <ng-template #paidver><h4 class="item-span-infor-cata">{{paid}}</h4></ng-template>
           <span class="item-span-infor-date-release">Ngày ra mắt : {{game.release_date}} </span>
         </div>
          
