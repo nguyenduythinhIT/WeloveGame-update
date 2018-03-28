@@ -10,7 +10,7 @@ export class GameListContentService{
     constructor (public http:HttpClient){}
     getConfig()
     {
-      return this.http.get(this.serverURL2);
+      return this.http.get(this.serverURL);
     }
 
   

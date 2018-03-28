@@ -18,6 +18,9 @@ constructor(public gamelistservice:GameListContentService) {
  gamelist:any[];
  notpaid = "Free";
  paid = "Paid";
+ poster_icon="assets/poster_icon.png";
+ game_name_icon="assets/game_name_icon.png";
+ free_paid_icon="assets/free_paid_icon.png";
   showConfig() {
     this.gamelistservice.getConfig()
      .subscribe((data: any[]) => {
