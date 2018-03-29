@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { GameListContentService } from './components/routing-component/game-list-content/game-list-content.service';
 import { GameContentComponent } from './components/game-content/game-content.component';
 import { GameContentService } from './components/game-content/game-content.service';
+import {SearchService} from './components/search-bar/search.service';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { GameContentService } from './components/game-content/game-content.servi
   ],
   providers: [
     GameListContentService,
-    GameContentService
+    GameContentService,
+    SearchService
   ],
   bootstrap: [
     AppComponent,

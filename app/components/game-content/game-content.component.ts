@@ -16,6 +16,7 @@ export class GameContentComponent implements OnInit {
     private route: ActivatedRoute
   ) {
     this.getInforGameByID();
+    this.getLink();
   }
 
   ngOnInit() {
@@ -23,6 +24,7 @@ export class GameContentComponent implements OnInit {
   
   game: any;
   gameId = this.route.snapshot.params['id']; 
+  link:any;
 
   getInforGameByID()
   {
@@ -30,8 +32,16 @@ export class GameContentComponent implements OnInit {
       this.game = res[0];
     });
   }
+  getLink(){
+    this.getLinkgamebyId(this.gameId).subscribe(res=>{
+      this.link = res[0];
+      console.log(this.link);
+    });
+  }
   getGameById(param) {
     return this.gameService.getGamebyId(param);
   }
-
+  getLinkgamebyId(param) {
+    return this.gameService.getLinkgamebyId(param);
+  }
 }
