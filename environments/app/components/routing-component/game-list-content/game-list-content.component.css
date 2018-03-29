@@ -1,0 +1,77 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+ .flex-box 
+  {
+    background-color: #f1f1f1;
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+  }
+
+  .flex-box:first-child
+  {
+      z-index: 0;
+  }
+
+.flex-box-thumb img
+{
+    z-index:2;
+    position: absolute;
+}
+
+.flex-box-infor
+{
+    z-index:3;
+    position: relative;
+    top:170px;
+}
+
+.flex-box-infor-name
+{
+    background-color:rgba(232,230,230, 0.3);
+    height: 20px;
+    padding: 3px 3px;
+   
+}
+.flex-box-infor-name > a 
+{
+    text-decoration: none;
+}
+.flex-box-infor-name > a > h3
+{
+    color:mistyrose;
+    margin : 0 30px;
+}
+
+.flex-box-infor-name > a >  h3:hover
+{
+    background-color:rgba(232,230,230, 0.5);
+    color:linen;
+}
+.flex-box-infor-name img
+{
+    margin-left:5px;
+}
+.flex-box-infor-paid img
+{
+    margin-left:5px;
+}
+.flex-box-infor-paid span
+{
+  color: orangered;
+  margin-left:33px;
+}
+
+.flex-box-infor-author > p 
+{
+    color: chartreuse;
+    margin : 0 20px;
+}
+
+.flex-box-infor-date > p 
+{
+    color: chartreuse;
+    margin : 0 20px;
+}
